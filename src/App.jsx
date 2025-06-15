@@ -22,16 +22,16 @@ function App() {
             <h3>Nossas Memórias</h3>
             <div className="memories-cards horizontal-scroll">
               <div className="memory-card">
-                <img src="/public/image-1.jpeg" alt="Primeiro encontro" />
+                <img src="/image-1.jpeg" alt="Primeiro encontro" />
               </div>
               <div className="memory-card">
-                <img src="/public/image-2.jpeg" alt="Viagem inesquecível" />
+                <img src="/image-2.jpeg" alt="Viagem inesquecível" />
               </div>
               <div className="memory-card">
-                <img src="/public/image-3.jpeg" alt="Momento especial" />
+                <img src="/image-3.jpeg" alt="Momento especial" />
               </div>
               <div className="memory-card">
-                <img src="/public/image-4.jpeg" alt="Momento especial" />
+                <img src="/image-4.jpeg" alt="Momento especial" />
               </div>
             </div>
           </div>
