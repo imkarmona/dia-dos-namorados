@@ -1,0 +1,271 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+body, .app-bg {
+  background: #181225;
+  min-height: 100vh;
+  color: #fff;
+  font-family: 'Inter', Arial, sans-serif;
+  margin: 0;
+}
+
+.centered {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 90vh;
+}
+
+.title {
+  font-size: 2.8rem;
+  font-weight: bold;
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  margin-bottom: 2.5rem;
+  color: #d1c4e9;
+}
+
+.reveal-btn {
+  background: #7c3aed;
+  color: #fff;
+  font-size: 2rem;
+  padding: 1rem 2.5rem;
+  border: none;
+  border-radius: 2.5rem;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.2s;
+  margin-top: 1rem;
+}
+
+.reveal-btn:hover {
+  background: #a78bfa;
+}
+
+.surprise {
+  padding: 2rem 0.5rem 6rem 0.5rem;
+  max-width: 600px;
+  margin: 0 auto;
+  width: 100%;
+  box-sizing: border-box;
+  overflow-x: visible;
+}
+
+.main-title {
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.main-subtitle {
+  font-size: 1.2rem;
+  color: #d1c4e9;
+  margin-bottom: 2rem;
+}
+
+.memories h3, .love-letter h3, .spotify-section h3 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+  color: #a78bfa;
+}
+
+.memories-cards {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  overflow-x: auto;
+  padding-bottom: 1rem;
+  scrollbar-width: thin;
+  scrollbar-color: #a78bfa #231942;
+  scroll-snap-type: x mandatory;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  max-width: 100vw;
+  box-sizing: border-box;
+}
+
+.memories-cards.horizontal-scroll {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  overflow-x: auto;
+  padding-bottom: 1rem;
+  scrollbar-width: thin;
+  scrollbar-color: #a78bfa #231942;
+  scroll-snap-type: x mandatory;
+}
+
+.memories-cards.horizontal-scroll::-webkit-scrollbar {
+  height: 8px;
+}
+
+.memories-cards.horizontal-scroll::-webkit-scrollbar-thumb {
+  background: #a78bfa;
+  border-radius: 4px;
+}
+
+.memories-cards.horizontal-scroll::-webkit-scrollbar-track {
+  background: #231942;
+  border-radius: 4px;
+}
+
+.memory-card {
+  min-width: 240px;
+  max-width: 260px;
+  width: 80vw;
+  background: #231942;
+  border-radius: 1.5rem;
+  padding: 1.5rem 1rem 1rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 2px 12px #0002;
+  scroll-snap-align: center;
+  transition: transform 0.2s;
+}
+
+.memory-card img {
+  width: 180px;
+  height: 180px;
+  border-radius: 1.2rem;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  box-shadow: 0 4px 16px #0003;
+}
+
+.memory-card span {
+  font-size: 1.2rem;
+  color: #fff;
+  text-align: center;
+}
+
+.love-letter {
+  margin-top: 2rem;
+}
+
+.letter-card {
+  background: #fff1fa;
+  color: #231942;
+  border-radius: 1.2rem;
+  padding: 1.5rem;
+  font-size: 1.1rem;
+  box-shadow: 0 2px 12px #0001;
+  margin: 0 auto;
+  max-width: 400px;
+}
+
+.spotify-section {
+  margin-top: 2.5rem;
+  text-align: center;
+}
+
+.footer-nav {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100vw;
+  background: #1a1530;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 60px;
+  z-index: 10;
+  border-top: 1px solid #2d2350;
+}
+
+.nav-icon {
+  font-size: 2rem;
+  color: #a78bfa;
+  transition: color 0.2s;
+}
+
+.nav-icon:first-child {
+  color: #fff;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+@media (max-width: 600px) {
+  html, body, .app-bg, #root {
+    width: 100vw;
+    max-width: 100vw;
+    min-width: 0;
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+  }
+  .surprise {
+    padding: 1rem 0.8rem 6rem 0.8rem;
+    max-width: 100vw;
+    width: 100vw;
+    box-sizing: border-box;
+    margin: 0;
+    overflow-x: visible;
+  }
+  .memories-cards {
+    max-width: 100vw;
+    width: 100vw;
+    box-sizing: border-box;
+    gap: 1rem;
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+  }
+  .memory-card {
+    min-width: 88vw;
+    max-width: 90vw;
+    width: 88vw;
+    padding: 1rem 0 0.5rem 0;
+  }
+  .memory-card img {
+    width: 82vw;
+    height: 82vw;
+    max-width: 90vw;
+    max-height: 90vw;
+  }
+}
